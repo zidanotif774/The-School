@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CC15F4C-E158-4C7C-8F6D-3EDE216FA046}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySchool</RootNamespace>
+    <AssemblyName>MySchool</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Iconarchive-Essential-Buildings-School.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EPPlus, Version=7.0.0.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.7.0.0-rc1\lib\net35\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="Excel.cs" />
+    <Compile Include="ExcelImportAndExport.cs" />
+    <Compile Include="ExcelImportAndExport2.cs" />
+    <Compile Include="exl.cs" />
+    <Compile Include="GetExcel.cs" />
+    <Compile Include="Models\ClassStudy.cs" />
+    <Compile Include="Models\EmphasisStudent.cs" />
+    <Compile Include="Models\Exam.cs" />
+    <Compile Include="Models\Level.cs" />
+    <Compile Include="Models\Grades.cs" />
+    <Compile Include="Models\Schoolinfo.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\SubjectClass.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\TeacherInYear.cs" />
+    <Compile Include="Models\TeacherSubject.cs" />
+    <Compile Include="Models\Term.cs" />
+    <Compile Include="Models\TermInYear.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Year.cs" />
+    <Compile Include="Persenter\SchooliformationPersenter.cs" />
+    <Compile Include="Persenter\ClassPersenter.cs" />
+    <Compile Include="Persenter\EmphasisStudentPersenter.cs" />
+    <Compile Include="Persenter\ExamPersenter.cs" />
+    <Compile Include="Persenter\GradeReportPersenter.cs" />
+    <Compile Include="Persenter\LevelPersenter.cs" />
+    <Compile Include="Persenter\GradesPersenter.cs" />
+    <Compile Include="Persenter\StudentPersenter.cs" />
+    <Compile Include="Persenter\TermInYearPersenter y.cs" />
+    <Compile Include="Persenter\SubjectClassPersenter.cs" />
+    <Compile Include="Persenter\SubjectPersenter.cs" />
+    <Compile Include="Persenter\TeacherInYearPersenter.cs" />
+    <Compile Include="Persenter\TeacherPersenter.cs" />
+    <Compile Include="Persenter\TeacherSubjectClassPersenter.cs" />
+    <Compile Include="Persenter\TermPersenter .cs" />
+    <Compile Include="Persenter\YearPersenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\FRM_ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FRM_ReportViewer.Designer.cs">
+      <DependentUpon>FRM_ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FRM_SendParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FRM_SendParameters.Designer.cs">
+      <DependentUpon>FRM_SendParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rpt_Results2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Results2.Designer.cs">
+      <DependentUpon>rpt_Results2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rpt_Results1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Results1.Designer.cs">
+      <DependentUpon>rpt_Results1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SchoolInformationOperations .cs" />
+    <Compile Include="Services\ClassesOperations.cs" />
+    <Compile Include="Services\EmphasisStudentOperation.cs" />
+    <Compile Include="Services\ExamOperation.cs" />
+    <Compile Include="Services\ExcelFileOperations.cs" />
+    <Compile Include="Services\GradesReportOperation.cs" />
+    <Compile Include="Services\LevelsOperations.cs" />
+    <Compile Include="Services\GradesOperations .cs" />
+    <Compile Include="Services\Master.cs" />
+    <Compile Include="Services\StudentsOperations.cs" />
+    <Compile Include="Services\TermInYearOperation.cs" />
+    <Compile Include="Services\SubjectClassOperation.cs" />
+    <Compile Include="Services\SubjectOperation.cs" />
+    <Compile Include="Services\TeacherInYearOperation.cs" />
+    <Compile Include="Services\TeacherOperation.cs" />
+    <Compile Include="Services\TeacherSubjectClassOperation.cs" />
+    <Compile Include="Services\TermOperation .cs" />
+    <Compile Include="Services\YearsOperation.cs" />
+    <Compile Include="Views\FORMS\FRM_AddGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_AddGrades.Designer.cs">
+      <DependentUpon>FRM_AddGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Exam.Designer.cs">
+      <DependentUpon>FRM_Exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_InportOfExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_InportOfExcel.Designer.cs">
+      <DependentUpon>FRM_InportOfExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Schoolinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Schoolinformation.Designer.cs">
+      <DependentUpon>FRM_Schoolinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Term.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Term.Designer.cs">
+      <DependentUpon>FRM_Term.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TermInYear .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TermInYear .Designer.cs">
+      <DependentUpon>FRM_TermInYear .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Classes.Designer.cs">
+      <DependentUpon>FRM_Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_ClassSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_ClassSubjects.Designer.cs">
+      <DependentUpon>FRM_ClassSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_EmphasisStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_EmphasisStudents.Designer.cs">
+      <DependentUpon>FRM_EmphasisStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Level.Designer.cs">
+      <DependentUpon>FRM_Level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_main.Designer.cs">
+      <DependentUpon>FRM_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Master.Designer.cs">
+      <DependentUpon>FRM_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_students.Designer.cs">
+      <DependentUpon>FRM_students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_StudyYears.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_StudyYears.Designer.cs">
+      <DependentUpon>FRM_StudyYears.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Subjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Subjects.Designer.cs">
+      <DependentUpon>FRM_Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_Teacher.Designer.cs">
+      <DependentUpon>FRM_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TeacherClassSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TeacherClassSubject.Designer.cs">
+      <DependentUpon>FRM_TeacherClassSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TeachersInYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FORMS\FRM_TeachersInYear.Designer.cs">
+      <DependentUpon>FRM_TeachersInYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Interfaces\IClassView.cs" />
+    <Compile Include="Views\Interfaces\IEmphasisStudentView.cs" />
+    <Compile Include="Views\Interfaces\IExamView.cs" />
+    <Compile Include="Views\Interfaces\IGradesReportView.cs" />
+    <Compile Include="Views\Interfaces\ILevelView.cs" />
+    <Compile Include="Views\Interfaces\IGradesView.cs" />
+    <Compile Include="Views\Interfaces\ISchoolinformationView.cs" />
+    <Compile Include="Views\Interfaces\IStudentView.cs" />
+    <Compile Include="Views\Interfaces\ITermInYearView .cs" />
+    <Compile Include="Views\Interfaces\ISubjectClassView.cs" />
+    <Compile Include="Views\Interfaces\ISubjectView.cs" />
+    <Compile Include="Views\Interfaces\ITeacherInYearView.cs" />
+    <Compile Include="Views\Interfaces\ITeacherSubjectClassView.cs" />
+    <Compile Include="Views\Interfaces\ITeacherView.cs" />
+    <Compile Include="Views\Interfaces\IUserView.cs" />
+    <Compile Include="Views\Interfaces\ITermView.cs" />
+    <Compile Include="Views\Interfaces\IYearView.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\FRM_ReportViewer.resx">
+      <DependentUpon>FRM_ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FRM_SendParameters.resx">
+      <DependentUpon>FRM_SendParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Results2.resx">
+      <DependentUpon>rpt_Results2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Results1.resx">
+      <DependentUpon>rpt_Results1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_AddGrades.resx">
+      <DependentUpon>FRM_AddGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Exam.resx">
+      <DependentUpon>FRM_Exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_InportOfExcel.resx">
+      <DependentUpon>FRM_InportOfExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Schoolinformation.resx">
+      <DependentUpon>FRM_Schoolinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Term.resx">
+      <DependentUpon>FRM_Term.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_TermInYear .resx">
+      <DependentUpon>FRM_TermInYear .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Classes.resx">
+      <DependentUpon>FRM_Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_ClassSubjects.resx">
+      <DependentUpon>FRM_ClassSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_EmphasisStudents.resx">
+      <DependentUpon>FRM_EmphasisStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Level.resx">
+      <DependentUpon>FRM_Level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_main.resx">
+      <DependentUpon>FRM_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Master.resx">
+      <DependentUpon>FRM_Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_students.resx">
+      <DependentUpon>FRM_students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_StudyYears.resx">
+      <DependentUpon>FRM_StudyYears.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Subjects.resx">
+      <DependentUpon>FRM_Subjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_Teacher.resx">
+      <DependentUpon>FRM_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_TeacherClassSubject.resx">
+      <DependentUpon>FRM_TeacherClassSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FORMS\FRM_TeachersInYear.resx">
+      <DependentUpon>FRM_TeachersInYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="closedxml.0.102.1.nupkg" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removepivotfield_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removepivotfield_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewsetting_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contentarrangeinrows_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contentarrangeinrows_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmultilevel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluewhitered_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluewhitered_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientlightbluedatabar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientlightbluedatabar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boperson_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_personalid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntask.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_businessman.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\functionsmore_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullextent_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullextent_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertdatafield_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertdatafield_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thisweek.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editrangepermission_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editrangepermission_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.svg" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\add_16x162.png" />
+    <Content Include="Iconarchive-Essential-Buildings-School.ico" />
+    <None Include="Resources\greenyellowredcolorscale.svg" />
+    <None Include="Resources\showdetail.svg" />
+    <Content Include="School.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="School_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>School.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

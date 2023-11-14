@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" xml:space="preserve" id="Show_Detail">
+  <style type="text/css">
+	.Black{fill:#727272;}
+	.Green{fill:#039C23;}
+	.st0{opacity:0.5;}
+</style>
+  <g opacity="0.5" class="st0">
+    <path d="M16,0h16v6H16V0z M16,14h16V8H16V14z M16,22h16v-6H16V22z M16,30h16v-6H16V30z" fill="#727272" opacity="0.5" class="Black" />
+  </g>
+  <polygon points="14,4 10,4 10,0 6,0 6,4 2,4 2,8 6,8 6,12 10,12 10,8 14,8 " fill="#039C23" class="Green" />
+</svg>
